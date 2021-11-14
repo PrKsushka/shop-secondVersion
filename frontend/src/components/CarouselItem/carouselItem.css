@@ -1,0 +1,25 @@
+.cards {
+  width: 353px;
+  margin-right: 31px;
+}
+.cards .im {
+  width: 350px;
+  height: 350px;
+  background-size: cover;
+}
+.cards img {
+  width: 336px;
+  height: 451px;
+}
+.cards p {
+  font-family: 'Roboto';
+  font-size: 14px;
+}
+.cards .little {
+  font-family: 'Arial';
+  font-size: 12px;
+  color: #ff8562;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: bold;
+}

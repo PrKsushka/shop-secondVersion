@@ -1,0 +1,150 @@
+@gr:#f4f4f4;
+.font(@fm, @fs){
+  font-family:@fm;
+  font-size:@fs;
+}
+
+
+.ab{
+  text-align: center;
+  font-size: 35px;
+}
+
+.main{
+  box-sizing: border-box;
+  padding: 20px 20px 0 20px;
+  display:flex;
+  margin-bottom: 130px;
+  .mainLeft{
+    width:50%;
+    height:100vh;
+    //background:url('../img/black.jpg') no-repeat;
+    background-size:cover;
+  }
+  .mainRight{
+    p{
+      .font('Roboto',18px);
+    }
+    background:@gr;
+    width:50%;
+    box-sizing: border-box;
+    padding: 140px 0 0 89px;
+  }
+}
+.obertka{
+  //background:url('../img/rekl.png') no-repeat;
+  display:flex;
+  width:100%;
+  flex-wrap:wrap;
+  justify-content:center;
+  background-size:cover;
+  box-sizing: border-box;
+  padding: 100px;
+  margin-bottom:120px;
+  form{
+    width: 960px;
+    background-color: rgba(0, 0, 0, 0.5);
+    .wrapper{
+      width:100%;
+      box-sizing: border-box;
+      padding: 20px 0 20px 5px;
+      display: flex;
+      justify-content: space-between;
+      span{
+        .font('Roboto',18px);
+        color:white;
+        margin-right: 20px;
+      }
+      input{
+        width: 67%;
+        border-radius: 20px;
+        height: 31px;
+
+      }
+    }
+    textarea{
+      width: 900px;
+      height: 148px;
+      display: flex;
+      margin: 0 auto;
+      justify-content: center;
+    }
+  }
+}
+.map{
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  margin-bottom:120px;
+}
+.button.k{
+  display: flex;
+  margin: 0 auto;
+  padding-left: 37px;
+  width: 245px;
+  height: 60px;
+  padding: 18px 0 0 1px;
+  /* justify-content: center; */
+  /* align-items: center; */
+  margin-bottom: 20px;
+}
+textarea{
+  &::placeholder{
+    color:black;
+    font-family: 'Roboto';
+    font-size:18px;
+    box-sizing:border-box;
+    padding:20px 0 0 5px;
+    &:focus:-moz-placeholder {
+      color: transparent
+    }
+
+  }
+}
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+  .BigBox{
+    .leftPicture{
+      background-position-x:center;
+    }
+  }
+  .main{
+    .mainLeft{
+      background-position-x: center;
+    }
+  }
+  .obertka{
+    display:none;
+  }
+  .n{
+    display:none;
+  }
+}
+
+@media only screen and(max-width:610px){
+  .BigBox{
+    display:none;
+  }
+  .tk{
+    padding-top:5px;
+  }
+  .n{
+    display:none;
+
+  }
+  .obertka{
+    display:none;
+  }
+  .main{
+    .mainLeft{
+      display:none;
+    }
+    .mainRight{
+      width:100%;
+      padding: 200px 0 88px 40px;
+    }
+  }
+}

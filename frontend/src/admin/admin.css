@@ -1,0 +1,25 @@
+.admin {
+  width: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background: pink;
+  border-radius: 17px;
+  padding: 20px 20px;
+  margin: 0 auto;
+}
+span {
+  font-family: 'Roboto';
+}
+.adminPannel {
+  font-family: 'Roboto';
+  display: flex;
+  justify-content: center;
+  font-size: 33px;
+  margin-bottom: 24px;
+}
+.mainAdmin {
+  background: #f3f2f1;
+  padding-bottom: 20px;
+}

@@ -1,0 +1,28 @@
+
+.font(@fm, @fs){
+  font-family:@fm;
+  font-size:@fs;
+}
+
+.comment{
+  width: 348px;
+  box-sizing: border-box;
+  padding: 38px 28px;
+  height: 204px;
+  border-radius: 10px;
+  background: white;
+  margin-bottom: 15px;
+  h3{
+    .font('Arial',16px);
+  }
+  p{
+    .font('Roboto',14px);
+  }
+}
+//mobile
+@media only screen and (max-width:610px){
+  .comment{
+    margin-right: inherit;
+    margin-bottom: 25px;
+  }
+}

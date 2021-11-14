@@ -1,0 +1,39 @@
+.navigation{
+    position:absolute;
+    z-index: 1;
+    width: 1400px;
+}
+.navigation ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.navigation ul li a{
+    text-decoration: none;
+    color:#f8d0e0;
+}
+.navigation ul li a:hover{
+    color:white;
+}
+
+/*//planshet*/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+.navigation{
+    width:500px;
+}
+
+}
+/*//mobile*/
+@media only screen and (max-width: 610px) {
+    .navigation{
+        width:333px;
+    }
+    .navigation ul{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .navigation ul li{
+        margin-right:15px;
+    }
+
+}

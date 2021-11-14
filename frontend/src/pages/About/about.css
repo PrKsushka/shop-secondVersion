@@ -1,0 +1,64 @@
+.ab {
+  text-align: center;
+  font-size: 35px;
+}
+.card {
+  width: 353px;
+  margin-right: 31px;
+}
+.card .im {
+  width: 350px;
+  height: 350px;
+  background-size: cover;
+}
+.card img {
+  width: 336px;
+  height: 451px;
+}
+.card p {
+  font-family: 'Roboto';
+  font-size: 14px;
+}
+.card .little {
+  font-family: 'Arial';
+  font-size: 12px;
+  color: #ff8562;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .BigBox .leftPicture {
+    background-position-x: center;
+  }
+  .main .mainLeft {
+    background-position-x: center;
+  }
+  .obertka {
+    display: none;
+  }
+  .n {
+    display: none;
+  }
+}
+@media only screen and (max-width: 610px) {
+  .BigBox {
+    display: none;
+  }
+  .tk {
+    padding-top: 5px;
+  }
+  .n {
+    display: none;
+  }
+  .obertka {
+    display: none;
+  }
+  .main .mainLeft {
+    display: none;
+  }
+  .main .mainRight {
+    width: 100%;
+    padding: 200px 0 88px 40px;
+  }
+}

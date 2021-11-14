@@ -1,0 +1,62 @@
+
+@gr:#f4f4f4;
+.font(@fm, @fs){
+  font-family:@fm;
+  font-size:@fs;
+}
+
+
+.ab{
+  text-align: center;
+  font-size: 35px;
+}
+
+.first{
+  width:100%;
+  height:500px;
+  display:flex;
+  flex-wrap:wrap;
+  box-sizing: border-box;
+  padding: 80px 10px 0 10px;
+  justify-content: space-around;
+  background: @gr;
+  img{
+    height: 400px;
+  }
+  .first_Right{
+    width: 563px;
+    flex-wrap: wrap;
+    h3{
+      text-align:left;
+      .font('Arial',26px);
+    }
+    p{
+      .font('Roboto',18px);
+    }
+
+
+  }
+}
+
+
+
+.BigBox{
+  display:flex;
+  width:100%;
+  flex-wrap:wrap;
+  margin-top:20px;
+  margin-bottom:40px;
+  .leftPicture{
+    //background:url('../img/uslugi/1.jpg') no-repeat;
+    width:50%;
+    background-size: cover;
+    background-position-y: center;
+  }
+  .rightPicture{
+    width:50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+  }
+}

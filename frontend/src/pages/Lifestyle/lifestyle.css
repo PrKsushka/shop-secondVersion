@@ -1,0 +1,175 @@
+.firstPartText {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 755px;
+  align-items: center;
+  margin: 0 auto;
+}
+.firstPartText h3 {
+  font-family: 'Roboto';
+  font-size: 30px;
+}
+.firstPartText p {
+  font-family: 'Roboto';
+  font-size: 20px;
+}
+.bigPict {
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+.boxesForPict {
+  justify-content: space-around;
+  width: 100%;
+  height: 380px;
+  display: flex;
+  margin-top: 50px;
+}
+.boxesForPict img {
+  width: 300px;
+  height: 300px;
+}
+.secondBoxForPicture {
+  display: flex;
+  margin: 70px 0 70px 0;
+  width: 100%;
+  justify-content: center;
+}
+.secondBoxForPicture .one {
+  width: 544px;
+  height: 640px;
+  background-size: cover;
+  margin-right: 50px;
+}
+.secondBoxForPicture .two {
+  width: 500px;
+}
+.secondBoxForPicture .two img {
+  height: 310px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.secondBox h2 {
+  font-family: 'Roboto';
+  font-size: 30px;
+  text-align: center;
+}
+.secondBox .firstPart {
+  display: flex;
+  flex-wrap: wrap;
+  width: 755px;
+  align-items: center;
+  margin: 0 auto;
+}
+.secondBox .firstPart h3 {
+  font-family: 'Roboto';
+  font-size: 20px;
+  font-weight: bold;
+}
+.secondBox .firstPart p {
+  font-family: 'Roboto';
+  font-size: 20px;
+}
+.secondBox .firstPart .pict {
+  background-size: contain;
+  width: 100%;
+  height: 500px;
+}
+.secondBox .contained {
+  display: flex;
+  justify-content: center;
+}
+.secondBox .contained img {
+  width: 455px;
+  height: 609px;
+}
+.red {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+.red img {
+  width: 500px;
+}
+footer {
+  background: #171717;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  box-sizing: border-box;
+  padding: 50px 20px 0 20px;
+  justify-content: space-between;
+}
+footer p {
+  font-family: 'Arial';
+  font-size: 16px;
+  color: white;
+}
+footer .vverh {
+  font-family: 'Arial';
+  font-size: 16px;
+  text-decoration: none;
+  color: white;
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  html body .footer {
+    display: none;
+  }
+  html body .header {
+    height: 88vh;
+  }
+  html body .boxesForPict {
+    justify-content: space-around;
+  }
+  html body .boxesForPict img {
+    width: 235px;
+    height: 235px;
+  }
+  html body .red img {
+    width: 332px;
+  }
+  html body .secondBox .contained img {
+    width: 331px;
+    height: 459px;
+  }
+}
+@media only screen and (max-width: 610px) {
+  html body .footer {
+    display: none;
+  }
+  html body .metka {
+    display: none;
+  }
+  html body .firstPartText {
+    width: 100%;
+  }
+  html body .bigPict {
+    height: 285px;
+  }
+  html body .boxesForPict img:nth-child(odd) {
+    display: none;
+  }
+  html body .secondBoxForPicture .one {
+    display: none;
+  }
+  html body .secondBoxForPicture .two img {
+    height: 240px;
+  }
+  html body .secondBox .firstPart {
+    width: 100%;
+  }
+  html body .secondBox .firstPart .pict {
+    height: 249px;
+  }
+  html body .secondBox .contained {
+    flex-direction: column;
+  }
+  html body .secondBox .contained img {
+    width: 363px;
+    height: 509px;
+  }
+  html body .red {
+    display: none;
+  }
+}

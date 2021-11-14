@@ -1,0 +1,45 @@
+@black: #000000;
+@gr:#f4f4f4;
+@wh:white;
+@pink:#ffdae9;
+.builder(@w, @h, @f){
+  width:@w;
+  height:@h;
+  display:@f;
+}
+.wh(@w, @h){
+  width:@w;
+  height:@h;
+}
+.font(@fm, @fs){
+  font-family:@fm;
+  font-size:@fs;
+}
+
+
+  .cards{
+    width: 353px;
+    margin-right: 31px;
+    .im{
+      .wh(350px, 350px);
+      background-size: cover;
+    }
+    img{
+      width: 336px;
+      height: 451px;
+    }
+    h3{
+
+    }
+    p{
+      .font('Roboto',14px);
+    }
+    .little{
+      .font('Arial',12px);
+      color:#ff8562;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-weight:bold;
+    }
+  }
+

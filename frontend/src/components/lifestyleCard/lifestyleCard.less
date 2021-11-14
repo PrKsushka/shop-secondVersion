@@ -1,0 +1,143 @@
+.font(@fm, @fs){
+  font-family:@fm;
+  font-size:@fs;
+}
+
+.builder(@w, @h, @f){
+  width:@w;
+  height:@h;
+  display:@f;
+}
+.wh(@w, @h){
+  width:@w;
+  height:@h;
+}
+.pict img{
+  width:755px;
+  height:500px;
+}
+.pict{
+  display: flex;
+  justify-content: center;
+}
+.secondBoxForPicture{
+  display: flex;
+  margin: 70px 0 70px 0;
+  width: 100%;
+  justify-content: center;
+  .one{
+    width: 544px;
+    height: 640px;
+    //background:url('../img/flmain.jpg') no-repeat;
+    background-size:cover;
+    margin-right:50px;
+  }
+  .two{
+    width: 500px;
+    img{
+      height: 310px;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+}
+.secondBox{
+  h2{
+    .font('Roboto',30px);
+    text-align:center;
+
+  }
+  .firstPart{
+    display: flex;
+    flex-wrap: wrap;
+    width: 755px;
+    align-items: center;
+    margin: 0 auto;
+    h3{
+      .font('Roboto',20px);
+      font-weight:bold;
+    }
+    p{
+      .font('Roboto',20px);
+    }
+
+  }}
+.margRight{
+  margin-right: 40px;
+}
+.mrgRightOne{
+  margin-right: 76px;
+}
+.margTop{
+  margin-top:85px;
+}
+.disp{
+  display: none;
+}
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+
+      .boxesForPict{
+        justify-content: space-around;
+        img{
+          width:235px;
+          height:235px;
+        }
+      }
+      .red{
+        img{
+          width: 332px;
+        }
+      }
+      .secondBox{
+        .contained{
+          img{
+            width: 331px;
+            height: 459px;
+          }
+        }
+      }
+    }
+
+
+//mobile
+@media only screen and(max-width:610px){
+  .pict img{
+    height: 220px;
+  }
+
+      .boxesForPict{
+        img:nth-child(odd){
+          display:none;
+        }
+      }
+      .secondBoxForPicture{
+        .one{
+          display:none;
+        }
+        .two img{
+          height: 240px;
+        }
+      }
+      .secondBox{
+        .firstPart{
+          width:100%;
+          .pict{
+            height: 249px;
+          }
+
+        }
+        .contained{
+          flex-direction: column;
+          img{
+            width: 363px;
+            height: 509px;
+          }
+        }
+      }
+      .red{
+        display:none;
+      }
+    }
